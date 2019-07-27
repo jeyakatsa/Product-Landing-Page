@@ -1,13 +1,13 @@
 html,
 body {
- text-align: center;
+  text-align: center;
   font-family: arial;
 }
 
 header {
   position: fixed;
   margin-top: -8px;
-  margin-left: -18px;
+  margin-left: -8px;
   margin-right: 40px;
   min-height: 65px;
   min-width: 100%;
@@ -16,10 +16,14 @@ header {
   align-items: center;
   background-color: white;
   box-shadow: 0px 0px 5px #4d7d91;
+  z-index: 3;
 }
 
 @media (max-width: 600px) {
   header {
+    min-height: 65px;
+    min-width: 100%;
+    padding: 0px 0px 0px 0px;
     flex-wrap: wrap;
   }
 }
@@ -30,8 +34,8 @@ header {
 
 @media (max-width: 650px) {
   .logo {
-    margin-top: 15px;
-    width: 50%;
+    padding-top: 25px;
+    width: 60%;
     margin: 0 auto;
     position: relative;
   }
@@ -50,12 +54,12 @@ header {
 
 @media (max-width: 650px) {
   .logo > img {
-    margin: 0 auto;
+  margin: 0 auto;
+  align-items: center;
   }
 }
 
 nav {
-  font-weight: 400;
   font-size: 10.5pt;
   margin-top: 5px;
   margin-left: 10%;
@@ -64,21 +68,27 @@ nav {
 
 @media (max-width: 650px) {
   nav {
-    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 9pt;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
-    padding: 0 50px;
-  }
-  nav {
-    padding-bottom: 5px;
   }
 }
 
 span {
    margin-left: 40px;
    letter-spacing: 1px;
+}
+
+@media (max-width: 650px) {
+  span {
+   margin-left: 20px;
+   letter-spacing: 0px;
+  }
 }
 
 a {
@@ -91,25 +101,36 @@ a:hover {
 }
 
 h1 {
-  margin-top: 90px;
+  margin-top: 100px;
   font-size: 12pt;
-  font-weight: 500;
+  font-weight: 400;
   color: black;
-  opacity: .8;
+  opacity: .7;
   letter-spacing: 1px;
+  z-index: 2;
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 9pt;
+    margin-top: 120px;
+    letter-spacing: 01x;
+    opacity: .8;
+  }
 }
 
 #email {
   text-align: center;
   color: black;
   opacity: .5;
-  width: 75%;
+  width: 55%;
   margin-top: 25px;
   font-weight: 600;
   font-size: 11pt;
   height: 15px;
   border: transparent;
   -webkit-appearance: none;
+  z-index: 2;
 }
 
 #email:focus {
@@ -120,13 +141,27 @@ h1 {
   -webkit-box-shadow: inset 0 0 0px 9999px white;
 }
 
+@media screen and (max-width: 700px) {
+  #email {
+  font-size: 10pt;
+  width: 90%;
+  }
+}
+
 hr {
   margin-top: 0px;
   height: 3px;
   border: none;
-  opacity: .2;
-  width: 75%;
+  opacity: .3;
+  width: 55%;
   background: gray; 
+}
+
+@media screen and (max-width: 700px) {
+  hr {
+  width: 90%;
+  height: 1px;
+  }
 }
 
 #submit {
@@ -149,19 +184,31 @@ hr {
 
 @media screen and (max-width: 700px) {
   #submit {
-  width: 60%;
+  font-size: 10pt;
+  width: 90%;
   }
 }
   
 #submit:hover {
-  background-color: silver;
+  background-color: black;
+  opacity: .7;
   cursor: pointer;
 }
   
 #submit:focus {
-  background-color: gray;
-  border-color: gray;
-  color: white;
+  background-color: black;
+  opacity: 1;
   outline: none;
   cursor: pointer;
+}
+
+#simple {
+  margin-top: 500px;
+}
+
+h2 {
+  margin-top: 70px;
+  font-size: 30pt;
+  font-weight: 400;
+  color: #00455f;
 }
