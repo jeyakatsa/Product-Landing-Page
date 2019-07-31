@@ -23,7 +23,6 @@ header {
   header {
     position: fixed;
     min-height: 65px;
-    min-width: 100%;
     padding: 0px 0px 0px 0px;
     flex-wrap: wrap;
   }
@@ -35,7 +34,7 @@ header {
 
 @media (max-width: 650px) {
   .logo {
-    padding-top: 30px;
+    padding-top: 20px;
     width: 60%;
     margin: 0 auto;
     position: relative;
@@ -67,17 +66,20 @@ nav {
   margin-right: 7%;
 }
 
+nav select {
+  display: none;
+}
+
 @media (max-width: 650px) {
-  nav {
-    padding-top: 15px;
-    padding-bottom: 25px;
-    font-size: 9pt;
+  nav #ul     { display: none; }
+  nav select { 
+    margin-top: 15px;
+    margin-left: 90px;
+    margin-bottom: 25px;
+    font-size: 8pt;
     display: flex;
-    margin-left: 0%;
-    margin-right: 10%;
     flex-direction: row;
-    align-items: center;
-  }
+    align-items: center;}
 }
 
 span {
@@ -114,7 +116,7 @@ h1 {
 @media (max-width: 650px) {
   h1 {
     font-size: 18pt;
-    margin-top: 155px;
+    margin-top: 140px;
     letter-spacing: 1px;
     opacity: .6;
     margin-left: 10%;
