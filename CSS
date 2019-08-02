@@ -1,6 +1,6 @@
 html,
 body {
-   text-align: center;
+  text-align: center;
   font-family: arial;
 }
 
@@ -87,9 +87,9 @@ span {
 
 @media (max-width: 650px) {
   span {
-   letter-spacing: 1px;
-   font-size: 11pt;
-   margin-right: 20%;   
+    letter-spacing: 1px;
+    font-size: 11pt;
+    margin-right: 20%;
   }
 }
 
@@ -103,7 +103,7 @@ a:hover {
 }
 
 .dropdown {
-  display: none;  
+  display: none;
 }
 
 .dropdown-content {
@@ -111,11 +111,11 @@ a:hover {
   position: fixed;
   background-color: white;
   min-width: 200px;
-  padding: 25px 5px;
+  padding: 25px 25px;
   border-radius: 40px;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-right: 50%;
-  margin-left: -15%;
+  margin-left: 2.5%;
   box-shadow: 0px 2px 5px 0px #4d7d91;
   z-index: 1;
 }
@@ -130,11 +130,11 @@ a:hover {
 
 @media (max-width: 650px) {
   #ul { display: none; }
-  .dropdown { 
+  .dropdown {
     margin-bottom: 25px;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    flex-direction: column;
   }
 }
 
