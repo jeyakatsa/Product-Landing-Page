@@ -54,8 +54,8 @@ header {
 
 @media (max-width: 650px) {
   .logo > img {
-  margin: 0 auto;
-  align-items: center;
+    margin: 0 auto;
+    align-items: center;
   }
 }
 
@@ -77,12 +77,12 @@ nav {
 #menu {
   font-family: minion pro;
   font-size: 40pt;
-  color: #4d7d91;
+  color: #00455f;
 }
 
 span {
-   margin-left: 40px;
-   letter-spacing: 1px;
+  margin-left: 40px;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 650px) {
@@ -120,7 +120,7 @@ a:hover {
   z-index: 1;
 }
 
-.dropdown:hover { 
+.dropdown:hover {
   cursor: pointer;
 }
 
@@ -129,7 +129,9 @@ a:hover {
 }
 
 @media (max-width: 650px) {
-  #ul { display: none; }
+  #ul {
+    display: none;
+  }
   .dropdown {
     margin-bottom: 25px;
     display: flex;
@@ -143,7 +145,7 @@ h1 {
   font-size: 17pt;
   font-weight: 400;
   color: black;
-  opacity: .6;
+  opacity: 0.6;
   letter-spacing: 1px;
   z-index: 2;
 }
@@ -153,7 +155,7 @@ h1 {
     font-size: 18pt;
     margin-top: 140px;
     letter-spacing: 1px;
-    opacity: .6;
+    opacity: 0.6;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -162,7 +164,7 @@ h1 {
 #email {
   text-align: center;
   color: black;
-  opacity: .5;
+  opacity: 0.5;
   width: 55%;
   margin-top: 40px;
   font-weight: 600;
@@ -183,9 +185,9 @@ h1 {
 
 @media screen and (max-width: 700px) {
   #email {
-  font-size: 10pt;
-  width: 90%;
-  margin-top: 30px;
+    font-size: 10pt;
+    width: 90%;
+    margin-top: 30px;
   }
 }
 
@@ -193,15 +195,15 @@ hr {
   margin-top: 0px;
   height: 3px;
   border: none;
-  opacity: .3;
+  opacity: 0.3;
   width: 55%;
-  background: gray; 
+  background: gray;
 }
 
 @media screen and (max-width: 700px) {
   hr {
-  width: 90%;
-  height: 1px;
+    width: 90%;
+    height: 1px;
   }
 }
 
@@ -225,18 +227,18 @@ hr {
 
 @media screen and (max-width: 700px) {
   #submit {
-  font-size: 10pt;
-  width: 90%;
+    font-size: 10pt;
+    width: 90%;
   }
 }
-  
+
 #submit:hover {
   background-color: white;
   font-weight: 600;
   color: #00455f;
   cursor: pointer;
 }
-  
+
 #submit:focus {
   outline: none;
   cursor: pointer;
@@ -251,8 +253,8 @@ h2 {
 
 @media screen and (max-width: 700px) {
   h2 {
-  margin-top: 80px;
-  font-size: 25pt;
+    margin-top: 80px;
+    font-size: 25pt;
   }
 }
 
@@ -263,17 +265,17 @@ h2 {
 p {
   margin-top: -10pt;
   font-size: 17pt;
-  opacity: .8;
+  opacity: 0.8;
   margin-left: 20%;
   margin-right: 20%;
 }
 
 @media screen and (max-width: 700px) {
   p {
-  margin-top: -10pt;
-  font-size: 15pt;
-  margin-left: 30px;
-  margin-right: 30px;
-  opacity: .8;
+    margin-top: -10pt;
+    font-size: 15pt;
+    margin-left: 30px;
+    margin-right: 30px;
+    opacity: 0.8;
   }
 }
