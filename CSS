@@ -85,21 +85,25 @@ span {
   letter-spacing: 1px;
 }
 
-@media (max-width: 650px) {
-  span {
-    letter-spacing: 1px;
-    font-size: 11pt;
-    margin-right: 20%;
-  }
-}
-
 a {
   color: #4d7d91;
   text-decoration: none;
 }
 
 a:hover {
-  color: #00455f;
+    color: #00455f;
+}
+
+@media (max-width: 650px) {
+a:hover {
+    font-weight: 600;
+  }
+}
+
+#nav-link-split {
+  margin-top: 8px;
+  letter-spacing: 1px;
+  font-size: 11pt;
 }
 
 .dropdown {
@@ -111,7 +115,7 @@ a:hover {
   position: fixed;
   background-color: white;
   min-width: 200px;
-  padding: 25px 25px;
+  padding: 35px 35px;
   border-radius: 40px;
   margin-top: 30px;
   margin-right: 50%;
