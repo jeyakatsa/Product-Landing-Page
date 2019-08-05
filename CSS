@@ -19,12 +19,13 @@ header {
   z-index: 3;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   header {
     position: fixed;
     min-height: 65px;
     padding: 0px 0px 0px 0px;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
@@ -32,7 +33,7 @@ header {
   width: 20vw;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   .logo {
     padding-top: 25px;
     width: 60%;
@@ -52,7 +53,7 @@ header {
   margin-left: 10%;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   .logo > img {
     margin: 0 auto;
     align-items: center;
@@ -61,23 +62,21 @@ header {
 
 nav {
   font-size: 13pt;
-  margin-top: 25px;
   margin-left: 12%;
   margin-right: 7%;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   nav {
-    margin-top: -40px;
-    margin-left: 35%;
-    margin-bottom: -20px;
+    margin: 0 auto;
   }
 }
 
 #menu {
+  margin-top: -15px;
   font-family: minion pro;
   font-size: 40pt;
-  color: #00455f;
+  color: #4d7d91;
 }
 
 span {
@@ -91,19 +90,12 @@ a {
 }
 
 a:hover {
-    color: #00455f;
-}
-
-@media (max-width: 650px) {
-a:hover {
-    font-weight: 600;
-  }
+  color: gray;
 }
 
 #nav-link-split {
-  margin-top: 8px;
+  margin-top: 10px;
   letter-spacing: 1px;
-  font-size: 11pt;
 }
 
 .dropdown {
@@ -111,17 +103,15 @@ a:hover {
 }
 
 .dropdown-content {
+  font-size: 11pt;
   display: none;
   position: fixed;
   background-color: white;
   min-width: 200px;
   padding: 35px 35px;
   border-radius: 40px;
-  margin-top: 30px;
-  margin-right: 50%;
-  margin-left: 2.5%;
+  margin-top: 15px;
   box-shadow: 0px 2px 5px 0px #4d7d91;
-  z-index: 1;
 }
 
 .dropdown:hover {
@@ -132,12 +122,12 @@ a:hover {
   display: block;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   #ul {
     display: none;
   }
   .dropdown {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -154,10 +144,10 @@ h1 {
   z-index: 2;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   h1 {
     font-size: 18pt;
-    margin-top: 140px;
+    margin-top: 150px;
     letter-spacing: 1px;
     opacity: 0.6;
     margin-left: 10%;
@@ -169,7 +159,7 @@ h1 {
   text-align: center;
   color: black;
   opacity: 0.5;
-  width: 55%;
+  width: 75%;
   margin-top: 40px;
   font-weight: 600;
   font-size: 11.5pt;
@@ -187,7 +177,7 @@ h1 {
   -webkit-box-shadow: inset 0 0 0px 9999px white;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   #email {
     font-size: 10pt;
     width: 90%;
@@ -197,14 +187,14 @@ h1 {
 
 hr {
   margin-top: 0px;
-  height: 3px;
+  height: 4px;
   border: none;
   opacity: 0.3;
-  width: 55%;
+  width: 75%;
   background: gray;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   hr {
     width: 90%;
     height: 1px;
@@ -213,6 +203,7 @@ hr {
 
 #submit {
   margin-top: 10px;
+  letter-spacing: 1px;
   font-size: 11pt;
   font-weight: 100;
   font-family: arial;
@@ -229,17 +220,17 @@ hr {
   box-shadow: 0px 2px 10px #4d7d91;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   #submit {
-    font-size: 10pt;
+    font-size: 9pt;
     width: 90%;
+    letter-spacing: 2px;
   }
 }
 
 #submit:hover {
   background-color: white;
-  font-weight: 600;
-  color: #00455f;
+  color: gray;
   cursor: pointer;
 }
 
@@ -255,7 +246,7 @@ h2 {
   color: #00455f;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   h2 {
     margin-top: 80px;
     font-size: 25pt;
@@ -274,7 +265,7 @@ p {
   margin-right: 20%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   p {
     margin-top: -10pt;
     font-size: 15pt;
