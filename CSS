@@ -274,3 +274,17 @@ p {
     opacity: 0.8;
   }
 }
+
+#1st-shadow {
+  position: relative;
+  margin: auto;
+  margin-top: 500px;
+  padding: 60px;
+  width: 65%;
+  max-width: 605px;
+  min-height: 70px;
+  background: -webkit-linear-gradient(45deg, #910000, #000794, #009414, #889400, #6d0094);
+  -webkit-text-fill-color: transparent;
+  filter: blur(12px);
+  z-index: 2;
+}
