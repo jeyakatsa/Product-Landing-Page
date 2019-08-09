@@ -69,7 +69,7 @@ header {
 nav {
   font-size: 13pt;
   margin-top: 6px;
-  margin-left: 12.6%;
+  margin-left: 12.8%;
   margin-right: 7%;
 }
 
@@ -97,7 +97,8 @@ a {
 }
 
 a:hover {
-  color: gray;
+  color: black;
+  transition: color 1s
 }
 
 #nav-link-split {
@@ -247,6 +248,7 @@ hr {
   background-color: white;
   color: gray;
   cursor: pointer;
+  transition: background-color 1s
 }
 
 #submit:focus {
@@ -328,7 +330,7 @@ p {
 }
 
 #pricing {
-  margin-top: 60px;
+  margin-top: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -339,40 +341,58 @@ p {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: calc(100%  / 3);
+  width: calc(80% /3);
   margin: 10px;
-  border-radius: 30px;
+  border-radius: 50px;
   background-color: white;
-  box-shadow: 0px 8px 25px -4px #4d7d91;
+  box-shadow: 0px 5px 15px -4px #4d7d91;
+  padding-bottom: 60px;
 }
 
 .product > .level {
   color: black;
-  padding: 15px 0;
-  width: 100%;
+  padding-top: 40px;
   font-weight: 500;
+  font-size: 20pt;
+  opacity: 0.8;
+}
+
+#sub-level {
+  margin-top: -25px;
+  font-size: 13pt;
+}
+
+#refurbished {
+  margin-left: 5px;
+  font-style: italic;
+  opacity: .7;
 }
 
 .product > #price {
-  margin-top: 15px;
+  margin-top: 20px;
+  color: black;
+  opacity: 0.6;
+  font-weight: 600;
+  font-size: 27pt;
 }
 
 .product > #description {
-  margin: 15px 0;
+  margin-top: 20px;
 }
 
-.product > description > #wording {
-  padding: 5px 0;
+.product > #description > #wording {
+  font-size: 12pt;
+  text-align: left;
 }
 
-.product > button {
+button {
   border: 0;
   margin: 15px 0;
   background-color: #f1c40f;
   font-weight: 400;
 }
 
-.product > button:hover {
+button:hover {
   background-color: orange;
   transition: background-color 1s;
 }
