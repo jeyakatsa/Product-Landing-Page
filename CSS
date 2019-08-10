@@ -248,7 +248,7 @@ hr {
   background-color: white;
   color: gray;
   cursor: pointer;
-  transition: background-color 1s
+  transition: background-color 1s;
 }
 
 #submit:focus {
@@ -298,7 +298,7 @@ p {
 }
 
 #how-they-work {
-  margin-top: 100px;
+  margin-top: 110px;
 }
 
 #video {
@@ -330,7 +330,7 @@ p {
 }
 
 #pricing {
-  margin-top: 100px;
+  margin-top: -530px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -345,7 +345,7 @@ p {
   margin: 10px;
   border-radius: 50px;
   background-color: white;
-  box-shadow: 0px 5px 15px -4px #4d7d91;
+  box-shadow: 0px -10px 25px -10px #4d7d91;
   padding-bottom: 60px;
 }
 
@@ -385,9 +385,28 @@ p {
   text-align: left;
 }
 
+#product-buttons {
+  margin-top: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#product-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(80% /3);
+  margin: 10px;
+  border-radius: 50px;
+  background-color: #00455f;
+  padding-bottom: 50px;
+}
+
 button {
   border: 0;
-  margin: 15px 0;
+  margin-top: 185px;
   background-color: #f1c40f;
   font-weight: 400;
 }
