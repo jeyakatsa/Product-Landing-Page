@@ -330,7 +330,7 @@ p {
 }
 
 #pricing {
-  margin-top: -530px;
+  margin-top: -550px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -345,7 +345,7 @@ p {
   margin: 10px;
   border-radius: 50px;
   background-color: white;
-  box-shadow: 0px -10px 25px -10px #4d7d91;
+  box-shadow: 0px 5px 35px -20px black;
   padding-bottom: 60px;
 }
 
@@ -386,7 +386,7 @@ p {
 }
 
 #product-buttons {
-  margin-top: 400px;
+  margin-top: 340px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -397,33 +397,47 @@ p {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: calc(80% /3);
-  margin: 10px;
+  width: calc(78% /3);
+  margin: 15px;
   border-radius: 50px;
   background-color: #00455f;
+  box-shadow: 0px 10px 30px -15px #4d7d91;
   padding-bottom: 50px;
 }
 
-button {
-  border: 0;
+@media (max-width: 1200px) {
+  #product-button {
+    margin: 14px;
+  }
+}
+
+.btn {
+  border: 0px solid white;
   margin-top: 185px;
-  background-color: #f1c40f;
+  width: 60%;
+  padding: 15px;
+  background-color: white;
+  color: #00455f;
+  font-size: 15pt;
+  border-radius: 50px;
   font-weight: 400;
+  box-shadow: 0px 8px 25px -15px black;
 }
 
-button:hover {
-  background-color: orange;
-  transition: background-color 1s;
+.btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 1s;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   #pricing {
     flex-direction: column;
   }
   .product {
-    max-width: 300px;
-    width: 100%;
+    max-width: 400px;
+    width: 80%;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
   }
 }
