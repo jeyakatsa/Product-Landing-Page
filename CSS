@@ -386,7 +386,7 @@ p {
 }
 
 #product-buttons {
-  margin-top: 340px;
+  margin-top: 330px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -403,12 +403,6 @@ p {
   background-color: #00455f;
   box-shadow: 0px 10px 30px -15px #4d7d91;
   padding-bottom: 50px;
-}
-
-@media (max-width: 1200px) {
-  #product-button {
-    margin: 14px;
-  }
 }
 
 .btn {
@@ -433,13 +427,14 @@ p {
 @media (max-width: 1100px) {
   #pricing {
     flex-direction: column;
+    margin-top: -1165px;
   }
   .product {
-    max-width: 400px;
+    max-width: 600px;
     width: 80%;
     margin: 0 auto;
-    margin-top: -265%;
-    margin-bottom: -50%;
+
+    margin-bottom: 50px;
   }
 }
 
@@ -448,9 +443,9 @@ p {
     flex-direction: column;
   }
   #product-button {
-    max-width: 385px;
+    max-width: 485px;
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 20%;
+    margin-bottom: 20px;
   }
 }
