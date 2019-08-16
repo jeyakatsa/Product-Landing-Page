@@ -330,7 +330,7 @@ p {
 }
 
 #pricing {
-  margin-top: -550px;
+  margin-top: -580px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -377,16 +377,17 @@ p {
 }
 
 .product > #description {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .product > #description > #wording {
   font-size: 12pt;
-  text-align: left;
+  text-align: center;
+  margin-top: 10px;
 }
 
 #product-buttons {
-  margin-top: 330px;
+  margin-top: 390px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -448,11 +449,21 @@ p {
     margin: 0 auto;
     margin-bottom: 210px;
   }
-}
-
-@media (max-width: 1100px) {
+  #refurbished {
+  font-size: 10pt;
+  opacity: .8;
+  }
   #product-buttons {
     flex-direction: column;
+  }
+  .product > #description {
+  margin-top: 2px;
+  }
+  .product > #price {
+  margin-top: 10px;
+ }
+  #sub-level {
+   font-size: 12pt;
   }
   #product-button {
     max-width: 385px;
@@ -467,5 +478,11 @@ p {
     margin: 0 auto;
     margin-top: 280px;
     margin-bottom: 90px;
+  }
+  .product > #description > #wording {
+  font-size: 12pt;
+  text-align: center;
+  margin-top: 1px;
+  opacity: .7;
   }
 }
