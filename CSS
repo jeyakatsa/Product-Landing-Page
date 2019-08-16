@@ -2,14 +2,16 @@ html,
 body {
   text-align: center;
   font-family: arial;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 header {
   position: fixed;
   margin-top: -8px;
   min-height: 85px;
-  min-width: 97%;
-  margin-left: 1%;
+  width: 100%;
+  padding-left: -.7%;
   padding: 0px 0px 5px 0px;
   display: flex;
   align-items: center;
@@ -22,7 +24,7 @@ header {
   header {
     position: fixed;
     min-height: 65px;
-    margin-left: .6%;
+    padding-left: -1.5%;
     padding: 0px 0px 0px 0px;
     flex-wrap: wrap;
     flex-direction: column;
@@ -31,7 +33,7 @@ header {
 
 @media (max-width: 400px) {
   header {
-    margin-left: -0.8%;
+    padding-left: -2.3%;
   }
 }
 
@@ -56,7 +58,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: 35%;
+  margin-left: 45%;
 }
 
 @media (max-width: 780px) {
@@ -69,7 +71,7 @@ header {
 nav {
   font-size: 13pt;
   margin-top: 6px;
-  margin-left: 12.8%;
+  margin-left: 13.6%;
   margin-right: 7%;
 }
 
@@ -219,12 +221,12 @@ hr {
 
 #submit {
   margin-top: 10px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 9pt;
   font-weight: 100;
   font-family: arial;
   border: 3px solid;
-  background-color: #583a00;
+  background-color: #8a754d;
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -239,9 +241,9 @@ hr {
 
 @media screen and (max-width: 750px) {
   #submit {
-    font-size: 7pt;
+    font-size: 8pt;
     width: 90%;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-bottom: -40px;
   }
 }
@@ -314,20 +316,29 @@ h2 {
 }
 
 #how-they-work {
-  margin-top: 110px;
+  margin-top: 80px;
+  background-color: #8a754d;
+  height: 400px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 #video {
   max-width: 900px;
   height: 400px;
   width: 60%;
-  box-shadow: 0px 55px 40px -55px black;
+  box-shadow: 0px 65px 40px -55px black;
 }
 
 @media screen and (max-width: 900px) {
   #video {
-  height: 200px;
+  height: 220px;
   width: 60%;
+  }
+  #how-they-work {
+  height: 220px;
   }
 }
 
@@ -336,13 +347,18 @@ h2 {
   height: 200px;
   width: 70%;
   }
+  #how-they-work {
+  height: 200px;
+  }
 }
 
 @media screen and (max-width: 400px) {
   #video {
   height: 120px;
   width: 75%;
-  margin-top: 20px;
+  }
+  #how-they-work {
+  height: 120px;
   }
 }
 
@@ -404,7 +420,7 @@ h2 {
 }
 
 #product-buttons {
-  margin-top: 370px;
+  margin-top: 310px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -418,7 +434,7 @@ h2 {
   width: calc(78% /3);
   margin: 15px;
   border-radius: 50px;
-  background-color: #583a00;
+  background-color: #8a754d;
   box-shadow: 0px 10px 30px -15px #8a754d;
   padding-bottom: 50px;
 }
@@ -431,7 +447,7 @@ h2 {
   width: calc(78% /3);
   margin: 15px;
   border-radius: 50px;
-  background-color: #583a00;
+  background-color: #8a754d;
   box-shadow: 0px 10px 30px -15px #8a754d;
   padding-bottom: 50px;
 }
@@ -488,8 +504,8 @@ h2 {
     max-width: 385px;
     width: 78%;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 68px;
+    margin-top: 0px;
+    margin-bottom: 50px;
   }
     #product-bttn {
     max-width: 385px;
@@ -502,6 +518,5 @@ h2 {
   font-size: 12pt;
   margin-top: -10px;
   text-align: center;
-  opacity: .7;
   }
 }
