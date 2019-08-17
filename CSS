@@ -71,7 +71,7 @@ header {
 nav {
   font-size: 13pt;
   margin-top: 6px;
-  margin-left: 13.6%;
+  margin-left: 13.8%;
   margin-right: 7%;
 }
 
@@ -103,8 +103,13 @@ a:hover {
   transition: color 1s;
 }
 
-.nav-link {
-  letter-spacing: 2px;
+a:focus {
+  color: black;
+  transition: color 1s;
+}
+
+.nav-linkr {
+  letter-spacing: 1px;
 }
 
 #nav-link-split {
@@ -122,14 +127,10 @@ a:hover {
   position: fixed;
   background-color: white;
   min-width: 200px;
-  padding: 35px 35px;
+  padding: 65px 60px;
   border-radius: 40px;
   margin-top: 15px;
   box-shadow: 0px -5px 30px -15px #8a754d;
-}
-
-.dropdown:hover {
-  cursor: pointer;
 }
 
 .dropdown:hover .dropdown-content {
@@ -150,18 +151,18 @@ a:hover {
 
 h1 {
   margin-top: 150px;
-  font-size: 17pt;
+  font-size: 20pt;
   font-weight: 400;
   color: black;
-  letter-spacing: 1px;
+  opacity: .5;
+  letter-spacing: 2px;
   z-index: 2;
 }
 
 @media (max-width: 750px) {
   h1 {
-    font-size: 18pt;
     margin-top: 180px;
-    letter-spacing: 1px;
+    font-size: 18pt;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -169,7 +170,8 @@ h1 {
 
 @media (max-width: 400px) {
   h1 {
-    margin-top: 170px;
+    margin-top: 190px;
+    line-height: 35px;
   }
 }
 
@@ -219,7 +221,7 @@ hr {
   }
 }
 
-#submit {
+#submitr {
   margin-top: 10px;
   letter-spacing: 1px;
   font-size: 9pt;
@@ -240,7 +242,7 @@ hr {
 }
 
 @media screen and (max-width: 750px) {
-  #submit {
+  #submitr {
     font-size: 8pt;
     width: 90%;
     letter-spacing: 1px;
@@ -248,16 +250,22 @@ hr {
   }
 }
 
-#submit:hover {
+#submitr:hover {
   background-color: white;
+  transition: background-color 1s;
   color: gray;
   cursor: pointer;
-  transition: background-color 1s;
 }
 
-#submit:focus {
+#submitr:focus {
+  background-color: white;
+  transition: background-color 1s;
   outline: none;
   cursor: pointer;
+}
+
+#submit {
+  display: none;
 }
 
 #section-break {
@@ -295,7 +303,7 @@ h2 {
 #feature-description {
   margin-top: -8pt;
   font-size: 15pt;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 1000px) {
@@ -304,23 +312,23 @@ h2 {
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
-    line-height: 25px;
+    line-height: 40px;
   }
 }
 
 @media screen and (max-width: 400px) {
   #feature-description {
     font-size: 13pt;
-    margin-top: 0px;
+    margin-top: -10px;
   }
 }
 
 #how-they-work {
-  margin-top: 80px;
+  margin-top: 100px;
   background-color: #8a754d;
   height: 400px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   margin-left: 0%;
   margin-right: 0%;
 }
@@ -349,6 +357,9 @@ h2 {
   }
   #how-they-work {
   height: 200px;
+  margin-top: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   }
 }
 
@@ -398,19 +409,20 @@ h2 {
 #refurbished {
   margin-left: 5px;
   font-style: italic;
-  opacity: .7;
+  opacity: .5;
 }
 
 .product > #price {
   margin-top: 20px;
   color: black;
-  opacity: 0.9;
+  opacity: 0.7;
   font-weight: 500;
   font-size: 27pt;
 }
 
 .product > #description {
   margin-top: 5px;
+  opacity: .5;
 }
 
 .product > #description > #wording {
@@ -420,7 +432,7 @@ h2 {
 }
 
 #product-buttons {
-  margin-top: 310px;
+  margin-top: 350px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -473,6 +485,9 @@ h2 {
 }
 
 .btn:focus {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 1s;
   outline: none;
 }
 
@@ -489,10 +504,11 @@ h2 {
   }
   #refurbished {
   font-size: 10pt;
-  opacity: .8;
+  opacity: .6;
   }
   #product-buttons {
   flex-direction: column;
+  margin-top: 330px;
   }
   .product > #description {
   margin-top: 20px;
@@ -518,5 +534,57 @@ h2 {
   font-size: 12pt;
   margin-top: -10px;
   text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  #product-buttons {
+  margin-top: 320px;
+  }
+}
+
+@media (max-width: 700px) {
+  #product-buttons {
+  margin-top: 310px;
+  }
+}
+
+footer {
+  margin-top: 270px;
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+#footer-links {
+  align-items: center;
+  font-size: 9pt;
+  margin-left: -40px;
+}
+
+#copyright {
+  margin-top: 30px;
+  color: gray;
+  font-size: 9pt;
+  opacity: .8;
+}
+
+@media (max-width: 1300px) {
+  footer {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  #footer-links {
+  margin-left: -20px;
+  font-size: 8pt;
+  }
+  span {
+  margin-left: 20px;
+  }
+  #copyright {
+  margin-top: 20px;
+  font-size: 8pt;
   }
 }
