@@ -19,8 +19,8 @@ body {
 }
 
 header {
-  position: fixed;
-  margin-top: -8px;
+  position: static;
+  margin-top: 80px;
   min-height: 85px;
   width: 100%;
   padding-left: -.7%;
@@ -28,18 +28,17 @@ header {
   display: flex;
   align-items: center;
   background-color: white;
-  box-shadow: 0 40px 30px -40px #8a754d;
   z-index: 3;
 }
 
 @media (max-width: 780px) {
   header {
-    position: sticky;
+    position: static;
     min-height: 65px;
     padding-left: -1.5%;
     margin-top: 100px;
     padding: 0px 0px 0px 0px;
-    margin-bottom: -70px;
+    margin-bottom: -100px;
     flex-wrap: wrap;
     flex-direction: column;
   }
@@ -53,13 +52,13 @@ header {
 
 .logo {
   width: 20vw;
+      margin: 0 auto;
 }
 
 @media (max-width: 780px) {
   .logo {
     padding-top: 25px;
     width: 60%;
-    margin: 0 auto;
     position: relative;
   }
 }
@@ -72,7 +71,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: 45%;
+  margin: 0 auto;
 }
 
 @media (max-width: 780px) {
@@ -95,18 +94,6 @@ nav {
   }
 }
 
-#menu {
-  margin-top: -20px;
-  font-family: minion pro;
-  font-size: 40pt;
-  color: #8a754d;
-}
-
-span {
-  margin-left: 40px;
-  letter-spacing: 1px;
-}
-
 a {
   color: #8a754d;
   text-decoration: none;
@@ -122,49 +109,14 @@ a:focus {
   transition: color 1s;
 }
 
-.nav-linkr {
-  letter-spacing: 1px;
-}
-
-#nav-link-split {
-  margin-top: 20px;
-  letter-spacing: 2px;
-}
-
-.dropdown {
-  display: none;
-}
-
-.dropdown-content {
-  font-size: 11pt;
-  display: none;
-  position: fixed;
-  background-color: white;
-  min-width: 200px;
-  padding: 65px 60px;
-  border-radius: 40px;
-  margin-top: 15px;
-  box-shadow: 0px -5px 30px -15px #8a754d;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 @media (max-width: 780px) {
   #ul {
     display: none;
   }
-  .dropdown {
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
 }
 
 h1 {
-  margin-top: 150px;
+  margin-top: 50px;
   font-size: 20pt;
   font-weight: 400;
   color: black;
@@ -571,8 +523,12 @@ footer {
 
 #footer-links {
   align-items: center;
+  margin: 0 auto;
   font-size: 9pt;
-  margin-left: -40px;
+}
+
+#footer-linkr {
+  margin-left: 20px;
 }
 
 #copyright {
